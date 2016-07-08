@@ -9,10 +9,15 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/nerdtree'
 Plugin 'skalnik/vim-vroom'
 Plugin 'kien/ctrlp.vim'
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'fullybaked/toggle-numbers.vim'
+Plugin 'Shougo/neocomplete.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 call vundle#end()            " required
 
-" =========================== Settings =========================== 
+" =========================== Settings ===========================
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -26,6 +31,9 @@ set shortmess+=I
 set softtabstop=2
 set tabstop=2 shiftwidth=2 expandtab
 set expandtab " use spaces, not tabs (optional)
+set rnu
+let g:neocomplete#enable_at_startup = 1
+
 
 " Detect file type for indentation below
 :filetype indent on
@@ -73,3 +81,14 @@ function! <SID>StripTrailingWhitespaces()
 endfunction
 
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces() " strip trailing whitespace on save
+
+
+" ================ Misc =======================
+"autosave in tmux
+let g:tmux_navigator_save_on_switch = 1
+
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+" Set minimum syntax keyword length.
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+let g:neocomplete#lock_buffer_name_pattern = '\*ku\*'

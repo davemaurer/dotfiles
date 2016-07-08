@@ -20,6 +20,17 @@ alias gb="git branch"
 alias ga="git add"
 alias gh="git hist"
 alias gk="git commit -m"
+alias gac="git add .; git commit -m"
+
+#Tmux commands
+alias tn="tmux new -s"
+alias ta="tmux attach -t"
+alias ts="tmux switch -t"
+alias tsess="tmux list-sessions"
+alias td="tmux detach"
+alias tks="tmux kill-server"
+alias x="exit"
+alias nw='tmux new-window -c "$PWD"'
 
 # fancy ls command
 # -l  long format

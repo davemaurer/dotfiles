@@ -4,13 +4,11 @@
 source ~/.aliases.bash
 
 # export SECRET_KEY_BASE='85eab9c08c03b74bf1b1accd6b72224edfa283d9e66f6a16f129f5546f8fe0a5280c28568086da3605637f8bb137a98711f445aade25c08e6c220d0857877e1b'
-# export S3_BUCKET_NAME=mythicaleatures
+# export S3_BUCKET_NAME=wayoutthere
 # export AWS_ACCESS_KEY_ID='AKIAJZJSPHH4ESF6QNAQ'
 # export AWS_SECRET_ACCESS_KEY='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'
 # alias subl="/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl"
 #[[ -s "$HOME/.profile" ]] && source "$HOME/.profile" # Load the default .profile
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Load rvm so you can access Ruby
 
